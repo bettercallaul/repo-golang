@@ -31,7 +31,7 @@ func main() {
 
 func Defer() {
 	if r := recover(); r != nil {
-		fmt.Println("Ada yang error nih bg:", r)
+		fmt.Println("Ada yang error nih bg,", r)
 	} else {
 		fmt.Println("Lancar bang")
 	}

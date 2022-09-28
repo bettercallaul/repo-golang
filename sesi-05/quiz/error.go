@@ -31,17 +31,17 @@ func main() {
 
 func Defer() {
 	if r := recover(); r != nil {
-		fmt.Println("Error occured:", r)
+		fmt.Println("Ada error:", r)
 	} else {
-		fmt.Println("Application running perfectly")
+		fmt.Println("Lancar bang")
 	}
 }
 
 func akunValidasi(username string, password []byte) (string, error) {
 	p := string(password[:])
 	if username != "bettercallaul" || p != "mantepbanget" {
-		return "", errors.New("Username/Password is wrong")
+		return "", errors.New("Ada yang salah tuh")
 	}
 
-	return "Succesfully logged in!", nil
+	return "berhasil mashook!!", nil
 }
